@@ -230,7 +230,7 @@ if __name__ == '__main__':
             "typing-extensions>=4.5.0",
         ],
         extras_require={
-            "server": ["uvicorn>=0.21.1", "fastapi>=0.95.0", "sse-starlette>=1.3.3", "python-multipart>=0.0.6"],
+            "server": ["uvicorn>=0.21.1", "fastapi>=0.95.0", "sse-starlette>=1.3.3", "python-multipart>=0.0.6", "pydantic_settings==2.1.0"],
         },
         python_requires=">=3.9",
         classifiers=[

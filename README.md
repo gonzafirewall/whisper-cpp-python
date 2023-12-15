@@ -113,6 +113,14 @@ python3 -m whisper_cpp_python.server --model models/ggml-tiny.bin
 Navigate to [http://localhost:8001/docs](http://localhost:8001/docs) to see the OpenAPI documentation.
 
 
+## Development
+
+```bash
+git clone --recursive https://github.com/gonzafirewall/whisper-cpp-python
+cd whisper_cpp_python
+pip install ".[server]"
+```
+
 ## License
 
 whisper-cpp-python is released under the MIT License. See [LICENSE](LICENSE) for details.

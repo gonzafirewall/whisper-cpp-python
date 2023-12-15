@@ -25,13 +25,13 @@ from whisper_cpp_python.server.app import create_app, Settings
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     for name, field in Settings.__fields__.items():
-        description = field.field_info.description
+        description = field.description
         if field.default is not None and description is not None:
             description += f" (default: {field.default})"
         parser.add_argument(
             f"--{name}",
             dest=name,
-            type=field.type_,
+            type=field.annotation,
             help=description,
         )
 
